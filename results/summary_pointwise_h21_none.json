@@ -1,0 +1,51 @@
+{
+  "run_id": "pointwise_h21_none",
+  "config": {
+    "vsn_type": "pointwise",
+    "horizon": 21,
+    "window_size": 40,
+    "weight_mode": "none",
+    "class_weights": null,
+    "batch_size": 512,
+    "lr": 0.0005,
+    "d_model": 64,
+    "n_head": 4,
+    "num_layers": 2,
+    "dropout": 0.2
+  },
+  "data": {
+    "feature_count": 47,
+    "train_rows": 2129424,
+    "val_rows": 97712,
+    "test_rows": 43648
+  },
+  "test_metrics": {
+    "test_loss": 1.136932763647526,
+    "test_accuracy": 0.3382476478494624
+  },
+  "confidence_bets": {
+    "top_k_ratio": 0.1,
+    "top_k_n": 3634,
+    "top_k_accuracy": 0.23335167859108422,
+    "top_k_long_ratio": 0.012107870115575124,
+    "directional_pool_size": 36343
+  },
+  "vsn_top10": {
+    "Fin_RS_20d": 0.037982042878866196,
+    "RSI_14": 0.03636900708079338,
+    "Staples_RS_20d": 0.03321022167801857,
+    "Open": 0.03285928815603256,
+    "TNX_10Y_20d_log_ret": 0.03210904449224472,
+    "Low": 0.03202067315578461,
+    "DXY_20d_log_ret": 0.030133454129099846,
+    "Gold_5d_log_ret": 0.03000626713037491,
+    "MACD_Ratio": 0.029869958758354187,
+    "RSI_28": 0.029152309522032738
+  },
+  "diagnostics_file": "diagnostics_pointwise_h21_none.json",
+  "checkpoint_file": "best_model_pointwise_h21_none.pth",
+  "figures": {
+    "feature_interaction": "figures/feature_interaction_pointwise_h21_none.png",
+    "attention_dynamics": "figures/attention_dynamics_pointwise_h21_none_A.png"
+  }
+}

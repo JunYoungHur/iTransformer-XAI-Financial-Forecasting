@@ -1,0 +1,51 @@
+{
+  "run_id": "gru_h21_none",
+  "config": {
+    "vsn_type": "gru",
+    "horizon": 21,
+    "window_size": 40,
+    "weight_mode": "none",
+    "class_weights": null,
+    "batch_size": 512,
+    "lr": 0.0005,
+    "d_model": 64,
+    "n_head": 4,
+    "num_layers": 2,
+    "dropout": 0.2
+  },
+  "data": {
+    "feature_count": 47,
+    "train_rows": 2129424,
+    "val_rows": 97712,
+    "test_rows": 43648
+  },
+  "test_metrics": {
+    "test_loss": 1.3058149535605248,
+    "test_accuracy": 0.3816784274193548
+  },
+  "confidence_bets": {
+    "top_k_ratio": 0.1,
+    "top_k_n": 3181,
+    "top_k_accuracy": 0.3822697265011003,
+    "top_k_long_ratio": 0.49607041810751334,
+    "directional_pool_size": 31819
+  },
+  "vsn_top10": {
+    "ATR_Ratio_10": 0.04608920216560364,
+    "Oil_5d_log_ret": 0.035838667303323746,
+    "RSI_21": 0.03520115837454796,
+    "Williams_R_14": 0.034632548689842224,
+    "Volume": 0.03393825888633728,
+    "Yield_Curve_Spread": 0.029739217832684517,
+    "Low": 0.028182247653603554,
+    "Ind_RS_20d": 0.02675637975335121,
+    "Market_Regime_200MA": 0.026408156380057335,
+    "Oil_20d_log_ret": 0.026230646297335625
+  },
+  "diagnostics_file": "diagnostics_gru_h21_none.json",
+  "checkpoint_file": "best_model_gru_h21_none.pth",
+  "figures": {
+    "feature_interaction": "figures/feature_interaction_gru_h21_none.png",
+    "attention_dynamics": "figures/attention_dynamics_gru_h21_none_A.png"
+  }
+}

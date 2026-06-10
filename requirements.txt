@@ -1,0 +1,9 @@
+torch>=2.0
+numpy
+pandas
+pyarrow
+yfinance
+pandas_ta
+requests
+matplotlib
+seaborn

@@ -1,0 +1,55 @@
+{
+  "run_id": "gru_h21_inverse",
+  "config": {
+    "vsn_type": "gru",
+    "horizon": 21,
+    "window_size": 40,
+    "weight_mode": "inverse",
+    "class_weights": [
+      1.328060130087703,
+      0.8167080309909469,
+      0.8552318389213498
+    ],
+    "batch_size": 512,
+    "lr": 0.0005,
+    "d_model": 64,
+    "n_head": 4,
+    "num_layers": 2,
+    "dropout": 0.2
+  },
+  "data": {
+    "feature_count": 47,
+    "train_rows": 2129424,
+    "val_rows": 97712,
+    "test_rows": 43648
+  },
+  "test_metrics": {
+    "test_loss": 1.3002043404477708,
+    "test_accuracy": 0.3937331989247312
+  },
+  "confidence_bets": {
+    "top_k_ratio": 0.1,
+    "top_k_n": 5827,
+    "top_k_accuracy": 0.13832160631542817,
+    "top_k_long_ratio": 0.3701733310451347,
+    "directional_pool_size": 58273
+  },
+  "vsn_top10": {
+    "ATR_Ratio_10": 0.10277434438467026,
+    "Market_Regime_200MA": 0.03977038711309433,
+    "RSI_28": 0.03308546543121338,
+    "VIX_20d_log_ret": 0.03291207179427147,
+    "Volume": 0.02918846905231476,
+    "Volume_Anomaly_20": 0.02693745866417885,
+    "High": 0.02663317881524563,
+    "Ind_RS_20d": 0.025978337973356247,
+    "DXY_5d_log_ret": 0.025646576657891273,
+    "Yield_Curve_Spread": 0.02451084554195404
+  },
+  "diagnostics_file": "diagnostics_gru_h21_inverse.json",
+  "checkpoint_file": "best_model_gru_h21_inverse.pth",
+  "figures": {
+    "feature_interaction": "figures/feature_interaction_gru_h21_inverse.png",
+    "attention_dynamics": "figures/attention_dynamics_gru_h21_inverse_A.png"
+  }
+}

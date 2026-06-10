@@ -1,0 +1,11 @@
+{
+  "hypothesis": "mean_reversion (inverted predictions should be more accurate at high confidence)",
+  "result": "REJECTED",
+  "inverted_acc_by_confidence": {
+    "0.4": 0.3177,
+    "0.5": 0.3496,
+    "0.6": 0.3256,
+    "0.7": 0.2331
+  },
+  "interpretation": "High-confidence samples are associated with extreme macro regimes where outcome variance is maximal, not with directional signal. Model confidence reflects \"something big is happening\" rather than \"this direction will occur\"."
+}
